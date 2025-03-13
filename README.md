@@ -1,4 +1,4 @@
-# Every-Cryptocurrency-Daily-Market-Price
+# Every Cryptocurrency Daily Market Price
 Team - 19
 
 
