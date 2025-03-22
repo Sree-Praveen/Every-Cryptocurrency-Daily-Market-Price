@@ -70,5 +70,7 @@ By integrating state-of-the-art deep learning methods such as LSTM networks, CNN
 ---
 ![image](https://github.com/user-attachments/assets/248e1058-24ff-433c-92f7-6973c3d0ddda)
 
+For the period from 2015-01-01 to 2018-11-30, the correlation between cryptocurrency market data, the S&P 500 index, and inflation data appears to be weak or even negative. While traditional financial markets, represented by the S&P 500, are influenced by macroeconomic factors like interest rates and inflation, the cryptocurrency market operates largely independently, driven by factors such as speculation, technological advancements, regulatory changes, and adoption trends. During this period, Bitcoin and other cryptocurrencies experienced a significant bull run (notably in 2017), while inflation and the S&P 500 followed more stable trends. The divergence suggests that cryptocurrencies did not behave as a traditional hedge against inflation or closely track stock market movements, reinforcing their position as an alternative asset class rather than a direct reflection of traditional economic indicators.
+
 ## Model Selection and Training
 An **LSTM-based neural network** is used for binary classification, where the model predicts whether the closing price will increase (`1`) or decrease (`0`) on the next day.
