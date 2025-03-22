@@ -71,6 +71,145 @@ By integrating state-of-the-art deep learning methods such as LSTM networks, CNN
 ![image](https://github.com/user-attachments/assets/248e1058-24ff-433c-92f7-6973c3d0ddda)
 
 For the period from 2015-01-01 to 2018-11-30, the correlation between cryptocurrency market data, the S&P 500 index, and inflation data appears to be weak or even negative. While traditional financial markets, represented by the S&P 500, are influenced by macroeconomic factors like interest rates and inflation, the cryptocurrency market operates largely independently, driven by factors such as speculation, technological advancements, regulatory changes, and adoption trends. During this period, Bitcoin and other cryptocurrencies experienced a significant bull run (notably in 2017), while inflation and the S&P 500 followed more stable trends. The divergence suggests that cryptocurrencies did not behave as a traditional hedge against inflation or closely track stock market movements, reinforcing their position as an alternative asset class rather than a direct reflection of traditional economic indicators.
+### Data Preprocessing
 
-## Model Selection and Training
-An **LSTM-based neural network** is used for binary classification, where the model predicts whether the closing price will increase (`1`) or decrease (`0`) on the next day.
+### Exploratory Data Analysis (EDA) on Cryptocurrency Data
+
+- Checks for missing values.
+
+- Detects outliers in key numerical features (open, high, low, close, volume, 
+market) using box plots with a log scale for better visualization.
+
+### Filtering and Aggregating Data for Analysis
+
+- Filters dataset to include only records from 2015-01-01 to 2018-12-31.
+
+- Calculates the average trading volume per cryptocurrency by grouping the 
+data by symbol.
+
+Top 10 cryptocurrencies by average volume (2015-2018):
+symbol
+BTC     2.065705e+09
+ETH     8.544199e+08
+USDT    7.733304e+08
+BCH     7.542181e+08
+EOS     5.985996e+08
+XRP     2.694221e+08
+TRX     2.571595e+08
+LTC     1.961573e+08
+QTUM    1.893066e+08
+ETC     1.685421e+08
+![image](https://github.com/user-attachments/assets/1d6d1943-6365-41b9-ab6e-f1e7f60a71a3)
+
+
+### Outlier Treatment & Data Cleaning
+
+- Creates an explicit copy of the filtered dataset.
+
+- Applies Winsorization to numerical features (open, high, low, close, volume,
+market) by capping extreme values at the 1st and 99th percentiles to reduce
+the impact of outliers.
+
+- Identifies and removes duplicate rows (based on date and symbol) to ensure
+uniqueness.
+
+- Performs a final missing value check to confirm data completeness.
+### Feature Extraction
+
+## Importance of Feature Extraction
+
+- Enhances predictive model performance by deriving meaningful features 
+from raw data.
+
+- Technical Indicators Implemented:
+
+- Simple Moving Average (SMA 7-day): Smooths price trends.
+
+- Relative Strength Index (RSI 14-day): Measures momentum to identify 
+overbought/oversold conditions.
+
+- Exponential Moving Averages (EMA 12-day & 26-day): Captures short- 
+and long-term trends.
+
+- Moving Average Convergence Divergence (MACD): Identifies trend 
+reversals.
+
+- Bollinger Bands (20-day): Measures price volatility using standard 
+deviation.
+
+### Data Splitting
+
+## Classifying Market Conditions:
+
+- The function classifies market conditions (bullish, sideways, or bearish) based
+on the percentage change in closing prices.
+
+## Preparing Data for Time Series Cross-Validation:
+
+- TimeSeriesSplit is used to perform time series cross-validation with 3 folds.
+
+## Splitting Data for Training, Validation, and Testing:
+
+- The dataset is split into training, validation, and test sets in each fold of the 
+cross-validation.
+
+- The test set is further divided into validation and test sets.
+
+- The splits are stored in lists and then concatenated to create the final 
+training, validation, and test datasets.
+
+### Model Training, evaluation and optimization:
+
+- Utilized LSTM model-> loaded and prepared the data, performed feature 
+engineering, trained the LSTM model, and evaluated its performance.
+
+- Calculated Percentage Price Changes, based on the computed percentage 
+changes, the function assigns a market condition label (bullish, bearish, 
+or neutral) using predefined thresholds. If neither condition is met, it defaults 
+to neutral.
+
+- Trained, scaled features using MinMaxScaler which This helps improve LSTM 
+performance by ensuring that all input values are on a similar scale.
+
+- Applied one hot encoding, Class weights are computed to address class 
+imbalance by assigning higher weights to underrepresented classes.
+
+- The model is designed with two Bidirectional LSTM layers to capture both 
+forward and backward temporal dependencies. It 
+includes BatchNormalization to stabilize and accelerate training, 
+and Dropout layers for regularization, preventing overfitting.
+
+- A Dense layer with ReLU activation enables non-linear feature learning, while 
+the final softmax output layer provides multi-class classification.
+
+![image](https://github.com/user-attachments/assets/6ff6c6e5-f3c3-497e-8edd-6600b76ab638)
+
+
+- The architecture is optimized using the Adam optimizer and categorical cross-
+entropy loss for better performance and generalization.
+
+- Model is trained using training data, epoch=20, batch size=64, callbacks and 
+class weights.
+
+![image](https://github.com/user-attachments/assets/2681d45b-8bcd-4035-a229-840f52723bc5)
+
+![image](https://github.com/user-attachments/assets/f5fdcfbf-fad2-4950-80eb-330e873e3c5e)
+
+![image](https://github.com/user-attachments/assets/3d76bfe3-ad7f-4f5a-9712-93a427e4ee0d)
+
+
+- The best model is loaded and evaluated on the test set, reporting the test 
+accuracy. The training and validation accuracy and loss over epochs are 
+plotted in two subplots to visualize model performance during training. The 
+plots display how the model's accuracy and loss evolved for both training and
+validation data. The test accuracy of the model is 0.8120.
+
+
+
+![image](https://github.com/user-attachments/assets/f7771584-505e-4113-9515-d1df439285a0)
+
+
+![image](https://github.com/user-attachments/assets/ccffea40-21f8-45eb-8ef5-38d1805dbfe7)
+
+
+
