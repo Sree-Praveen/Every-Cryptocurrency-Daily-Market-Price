@@ -65,7 +65,7 @@ By integrating state-of-the-art deep learning methods such as LSTM networks, CNN
 [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/series/T10YIE)
 - **Date Range Used**: 2015-01-01 to 2018-11-30
 
-[Snp500 VOO Data]https://www.nasdaq.com/market-activity/etf/voo/historical
+[Snp500 VOO Data](https://www.nasdaq.com/market-activity/etf/voo/historical)
 - **Date Range Used**: 2015-01-01 to 2018-11-30
 ---
 ![image](https://github.com/user-attachments/assets/248e1058-24ff-433c-92f7-6973c3d0ddda)
@@ -88,17 +88,7 @@ market) using box plots with a log scale for better visualization.
 data by symbol.
 
 Top 10 cryptocurrencies by average volume (2015-2018):
-symbol
-BTC     2.065705e+09
-ETH     8.544199e+08
-USDT    7.733304e+08
-BCH     7.542181e+08
-EOS     5.985996e+08
-XRP     2.694221e+08
-TRX     2.571595e+08
-LTC     1.961573e+08
-QTUM    1.893066e+08
-ETC     1.685421e+08
+
 ![image](https://github.com/user-attachments/assets/1d6d1943-6365-41b9-ab6e-f1e7f60a71a3)
 
 
