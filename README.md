@@ -59,12 +59,14 @@ By integrating state-of-the-art deep learning methods such as LSTM networks, CNN
 ## Dataset Details
 ### Main Dataset:
 [All Crypto Currencies - Kaggle](https://www.kaggle.com/datasets/jessevent/all-crypto-currencies/data)
-- **Date Range Used**: 2015-01-01 to 2018-12-31
+- **Date Range Used**: 2015-01-01 to 2018-11-30
 
 ### Additional Dataset:
 [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/series/T10YIE)
-- **Date Range Used**: 2015-01-01 to 2018-12-31
+- **Date Range Used**: 2015-01-01 to 2018-11-30
 
+[Snp500 VOO Data]https://www.nasdaq.com/market-activity/etf/voo/historical
+- **Date Range Used**: 2015-01-01 to 2018-11-30
 ---
 
 ## Model Selection and Training
