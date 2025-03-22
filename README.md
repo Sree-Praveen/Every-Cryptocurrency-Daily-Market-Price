@@ -134,18 +134,18 @@ deviation.
 
 ---
 
-### Data Splitting
+## Data Splitting
 
-## Classifying Market Conditions:
+### Classifying Market Conditions:
 
 - The function classifies market conditions (bullish, sideways, or bearish) based
 on the percentage change in closing prices.
 
-## Preparing Data for Time Series Cross-Validation:
+### Preparing Data for Time Series Cross-Validation:
 
 - TimeSeriesSplit is used to perform time series cross-validation with 3 folds.
 
-## Splitting Data for Training, Validation, and Testing:
+### Splitting Data for Training, Validation, and Testing:
 
 - The dataset is split into training, validation, and test sets in each fold of the 
 cross-validation.
@@ -157,7 +157,7 @@ training, validation, and test datasets.
 
 ---
 
-### Model Training, evaluation and optimization:
+## Model Training, evaluation and optimization:
 
 - Utilized LSTM model-> loaded and prepared the data, performed feature 
 engineering, trained the LSTM model, and evaluated its performance.
