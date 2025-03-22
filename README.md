@@ -68,6 +68,7 @@ By integrating state-of-the-art deep learning methods such as LSTM networks, CNN
 [Snp500 VOO Data]https://www.nasdaq.com/market-activity/etf/voo/historical
 - **Date Range Used**: 2015-01-01 to 2018-11-30
 ---
+![image](https://github.com/user-attachments/assets/248e1058-24ff-433c-92f7-6973c3d0ddda)
 
 ## Model Selection and Training
 An **LSTM-based neural network** is used for binary classification, where the model predicts whether the closing price will increase (`1`) or decrease (`0`) on the next day.
