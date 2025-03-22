@@ -71,7 +71,9 @@ By integrating state-of-the-art deep learning methods such as LSTM networks, CNN
 ![image](https://github.com/user-attachments/assets/248e1058-24ff-433c-92f7-6973c3d0ddda)
 
 For the period from 2015-01-01 to 2018-11-30, the correlation between cryptocurrency market data, the S&P 500 index, and inflation data appears to be weak or even negative. While traditional financial markets, represented by the S&P 500, are influenced by macroeconomic factors like interest rates and inflation, the cryptocurrency market operates largely independently, driven by factors such as speculation, technological advancements, regulatory changes, and adoption trends. During this period, Bitcoin and other cryptocurrencies experienced a significant bull run (notably in 2017), while inflation and the S&P 500 followed more stable trends. The divergence suggests that cryptocurrencies did not behave as a traditional hedge against inflation or closely track stock market movements, reinforcing their position as an alternative asset class rather than a direct reflection of traditional economic indicators.
-### Data Preprocessing
+
+---
+## Data Preprocessing
 
 ### Exploratory Data Analysis (EDA) on Cryptocurrency Data
 
@@ -87,7 +89,7 @@ market) using box plots with a log scale for better visualization.
 - Calculates the average trading volume per cryptocurrency by grouping the 
 data by symbol.
 
-Top 10 cryptocurrencies by average volume (2015-2018):
+### Top 10 cryptocurrencies by average volume (2015-2018):
 
 ![image](https://github.com/user-attachments/assets/1d6d1943-6365-41b9-ab6e-f1e7f60a71a3)
 
@@ -104,9 +106,12 @@ the impact of outliers.
 uniqueness.
 
 - Performs a final missing value check to confirm data completeness.
-### Feature Extraction
+  
+---
 
-## Importance of Feature Extraction
+## Feature Extraction
+
+### Importance of Feature Extraction
 
 - Enhances predictive model performance by deriving meaningful features 
 from raw data.
@@ -126,6 +131,8 @@ reversals.
 
 - Bollinger Bands (20-day): Measures price volatility using standard 
 deviation.
+
+---
 
 ### Data Splitting
 
@@ -147,6 +154,8 @@ cross-validation.
 
 - The splits are stored in lists and then concatenated to create the final 
 training, validation, and test datasets.
+
+---
 
 ### Model Training, evaluation and optimization:
 
