@@ -219,5 +219,5 @@ validation data. The test accuracy of the model is 0.8120.
 | Sreelakshmi Praveen | [Watch Video](https://drive.google.com/file/d/1gsXXfJ3F8ncevzOv06id2VW3HOG0PiMa/view) |
 | Max Trunov  | [Watch Video](https://youtu.be/_VH_YzKZnHg) |
 | Vishakha Nair | [Watch Video](https://drive.google.com/file/d/1Y0F6UGRktNU0Y9iZIUTkWJFzPELZYcnp/view?usp=drivesdk) |
-| Lakshaya Dhruv  | [Watch Video](#) |
+| Lakshaya Dhruv  | [Watch Video](https://youtu.be/wy7OQjdMIsk) |
 
