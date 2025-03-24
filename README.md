@@ -211,4 +211,13 @@ validation data. The test accuracy of the model is 0.8120.
 ![image](https://github.com/user-attachments/assets/ccffea40-21f8-45eb-8ef5-38d1805dbfe7)
 
 
+## Team
+
+| Name   | Video           |
+|--------|------------------|
+| Eromosele Ikhalo | [Watch Video](#) |
+| Sreelakshmi Praveen | [Watch Video](#) |
+| Max Trunov  | [Watch Video](#) |
+| Vishakha Nair | [Watch Video](https://drive.google.com/file/d/1Y0F6UGRktNU0Y9iZIUTkWJFzPELZYcnp/view?usp=drivesdk) |
+| Lakshaya Dhruv  | [Watch Video](#) |
 
